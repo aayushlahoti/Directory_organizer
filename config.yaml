@@ -1,0 +1,18 @@
+rules:
+  type:
+    Images: [.jpg, .jpeg, .png, .gif, .webp, .svg, .ico, .bmp, .tiff]
+    Videos: [.mp4, .mov, .avi, .mkv, .flv, .wmv, .webm]
+    Documents: [.pdf, .docx, .doc, .txt, .xlsx, .xls, .pptx, .ppt, .csv, .odt]
+    Audio: [.mp3, .wav, .flac, .aac, .ogg, .m4a]
+    Archives: [.zip, .tar, .gz, .rar, .7z, .bz2]
+    Code: [.py, .js, .ts, .html, .css, .java, .cpp, .c, .go, .rs, .json, .xml, .yaml, .yml, .sh]
+    Executables: [.exe, .dmg, .pkg, .deb, .rpm, .msi, .appimage]
+
+  size:
+    Small:  [0, 1048576]           # 0 - 1 MB
+    Medium: [1048576, 52428800]    # 1 MB - 50 MB
+    Large:  [52428800, 524288000]  # 50 MB - 500 MB
+    Huge:   [524288000, null]      # 500 MB+
+
+  date:
+    format: "%Y-%m"   # Creates folders like 2025-01, 2025-02 etc.
